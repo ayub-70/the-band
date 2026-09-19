@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Segoe UI",sans-serif;
+}
+
+.clear{
+	clear:both;
+}
+
+/* starting header styling*/
+
+header{
+	background-color:black;
+	color:#fff;
+	text-transform:uppercase;
+	position:fixed;
+	width:100%;
+}
+
+header .home, header .icon-tool{
+	float:left;
+}
+
+header .home, ul li{
+	padding:10PX;
+	padding:15px 20PX;
+}
+
+header .icon-tool{
+	/*padding:13px;*/
+	padding:19.3PX 20PX;
+	position:absolute;
+	right:0;
+}
+
+header .home:hover, header .icon-tool:hover, header ul li:hover{
+	background-color:#ccc;
+	color:black;
+	cursor:pointer;
+}
+
+header .icon-tool > div{
+	width:15PX;
+	height:2PX;
+	margin-bottom:2px;
+	background-color:#fff;
+}
+
+header .icon-tool:hover > div{
+	background-color:black;
+}
+
+#checking-box{
+	display:none;
+}
+
+header ul{
+	display:none;
+}
+#checking-box:checked ~ ul{
+	display:block;
+}
+
+/* ending heading styling*/
+
+/* starting image/main tag styling*/
+
+main{
+	padding-top:50px;
+}
+
+main img{
+	width:100%;
+}
+
+/* ending image/main tag styling*/
+
+/* starting band section styling*/
+
+.band{
+	padding:70PX 15PX;
+	text-align:center;
+}
+
+.band .title{
+	font-size:30PX;
+	text-transform:uppercase;
+	letter-spacing:5PX;
+}
+
+.band .title + p{
+	color:grey;
+	font-style:italic;
+}
+
+.band .title + p:first-letter{
+	text-transform:uppercase;
+}
+
+.band .title + p, .band .title + p + p{
+	margin-top:20PX;
+}
+
+.band .title + p + p{
+	text-align:justify;
+}
+
+.band div{
+	margin-top:60PX;
+}
+
+.band .bandmember figcaption{
+	margin:25px 0 20PX 0 ;
+	text-transform:capitalize;
+}
+/* ending band section styling*/
+
+/* starting tour date section styling*/
+
+.tour-dates{
+	background-color:black;
+	color:#fff;
+	width:100%;
+	padding:70PX 0 90PX 0;
+	margin:0;
+}
+
+.tour-dates div:first-child p:first-child{
+	font-size:30PX;
+	text-transform:uppercase;
+	letter-spacing:5PX;
+	margin-bottom:15PX;
+}
+
+.tour-dates div:first-child p:last-child{
+	font-style:italic;
+	color:#919191;
+}
+
+.tour-dates div:first-child p:last-child:first-letter{
+	text-transform:uppercase;
+}
+
+.tour-dates div:first-child p:first-child, .tour-dates div:first-child p:last-child{
+	text-align:center;
+}
+
+.tour-dates figure{
+	background-color:red;
+	max-width:94%;
+	margin:35PX auto;
+}
+/* ending tour date section styling*/
