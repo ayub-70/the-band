@@ -16,6 +16,7 @@ header{
 	text-transform:uppercase;
 	position:fixed;
 	width:100%;
+	z-index:1;
 }
 
 header .home, header .icon-tool{
@@ -27,8 +28,7 @@ header .home, ul li{
 	padding:15px 20PX;
 }
 
-header .icon-tool{
-	/*padding:13px;*/
+header .icon-tool{	
 	padding:19.3PX 20PX;
 	position:absolute;
 	right:0;
@@ -122,7 +122,7 @@ main img{
 	background-color:black;
 	color:#fff;
 	width:100%;
-	padding:70PX 0 90PX 0;
+	padding:70PX 0 70PX 0;
 	margin:0;
 }
 
@@ -147,8 +147,199 @@ main img{
 }
 
 .tour-dates figure{
-	background-color:red;
+	background-color:#fff;
+	color:grey;
 	max-width:94%;
 	margin:35PX auto;
 }
+
+.tour-dates figure ul{
+	list-style:none;
+	padding:0;
+}
+
+.tour-dates figure ul li{
+	padding:8px 17px;
+	border:solid 1px #ccc;
+	border-bottom:0px;
+}
+
+.tour-dates figure ul li:first-letter, .tour-dates figure ul li span > span{
+	text-transform:uppercase;
+}
+
+.tour-dates figure ul li span{
+	padding:0 auto;
+	background-color:#F44336;
+	color:#fff;
+}
+
+.tour-dates figure ul li > span{
+	margin-left:20PX;
+	padding:1PX 7PX;
+	font-size:15PX;
+}
+
+.tour-dates figure ul li:last-child{
+	position:relative;
+}
+
+.tour-dates figure ul li:last-child span{
+	background-color:black;
+	color:#fff;
+	border-radius:50%;
+	position:absolute;
+	right:30PX;
+}
+
+.tour-dates .cities img{
+	width:100%;
+}
+
+.tour-dates .cities img:hover{
+	filter: brightness(50%);
+}
+
+.tour-dates .cities figure .content{
+	padding:8PX 15PX 15PX 15PX;
+}
+
+.tour-dates .cities figure .content h4{
+	text-transform:capitalize;
+	color:black;
+}
+
+.tour-dates .cities figure .content h4 + p{
+	color:grey;
+	text-transform:capitalize;
+	opacity:0.7;
+	margin-top:16PX;
+}
+
+.tour-dates .cities figure .content h4 + p +p{
+	color:black;
+	margin-top:16PX;
+}
+
+.tour-dates .cities figure .content h4 + p + p:first-letter{
+	text-transform:uppercase;
+}
+
+.tour-dates .cities figure .content button{
+	margin-top:13PX;
+	padding:7PX 15PX;
+	background-color:black;
+	color:#fff;
+	text-transform:capitalize;
+	font-size:16PX;
+	border:none;
+}
+
+.tour-dates .cities figure .content button:hover{
+	background-color:#ccc;
+	color:black;
+	cursor:pointer;
+}
+
 /* ending tour date section styling*/
+
+/* starting contact section styling*/
+
+.contact{
+	padding:70PX 15PX 0PX 15px;
+}
+
+.contact p:first-child{
+	font-size:25PX;
+	letter-spacing:5PX;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.contact p + p{
+	color:grey;
+	opacity:0.9;
+	font-style:italic;
+	margin-top:15PX;
+	text-align:center;
+}
+
+.contact p + p span{
+	text-transform:uppercase;
+}
+
+.contact ul{
+	list-style:none;
+	margin-top:45PX;
+	padding:0;
+}
+
+.contact ul li{
+	padding:5px;
+	text-transform:capitalize;
+	font-size:18px;
+}
+
+.contact ul span{
+	text-transform:none;
+}
+
+.contact form{
+	margin:10PX 0 150PX 0;
+	position:relative;
+	width:100%;
+}
+
+.contact form input{
+	width:100%;
+	height:35PX;
+	box-sizing:border-box;
+	margin-bottom:8PX;
+	text-transform:capitalize;
+}
+
+.contact form input[placeholder]{
+	padding-left:10PX;
+	font-size:15PX;
+}
+
+.contact form button{
+	position:absolute;
+	right:0;
+	margin-top:5PX;
+	padding:8PX 15PX;
+	background-color:black;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:15PX;
+	border:none;
+}
+
+.contact form button:hover{
+	background-color:#ccc;
+	color:black;
+	cursor:pointer;
+	border:none;
+	box-sizing:border-box;
+}
+
+.contact div:last-child img{
+	width:100%!important;
+	filter: grayscale(50%);
+}
+/* ending contact section styling*/
+
+/* starting footer styling*/
+
+footer{
+	padding:50PX;
+	background-color:#F6F6F6;
+	text-align:center;
+	color:grey;
+}
+
+footer p:first-child{
+	margin-bottom:20PX;
+}
+
+/* ending footer styling*/
