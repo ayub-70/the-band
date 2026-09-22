@@ -17,6 +17,7 @@ header{
 	position:fixed;
 	width:100%;
 	z-index:1;
+	box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 header .home, header .icon-tool{
@@ -323,11 +324,16 @@ main img{
 	box-sizing:border-box;
 }
 
-.contact div:last-child img{
+/* ending contact section styling*/
+
+/* starting location section styling*/
+
+.location img{
 	width:100%!important;
 	filter: grayscale(50%);
 }
-/* ending contact section styling*/
+
+/* ending location section styling*/
 
 /* starting footer styling*/
 
@@ -340,6 +346,12 @@ footer{
 
 footer p:first-child{
 	margin-bottom:20PX;
+}
+
+footer span{
+	text-decoration:underline;
+	text-transform:capitalize;
+	color:blue;
 }
 
 /* ending footer styling*/
