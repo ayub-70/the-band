@@ -26,11 +26,11 @@ header .home, header .icon-tool{
 
 header .home, ul li{
 	padding:10PX;
-	padding:15px 20PX;
+	padding:13px 20PX;
 }
 
 header .icon-tool{	
-	padding:19.3PX 20PX;
+	padding:18PX 20PX;
 	position:absolute;
 	right:0;
 }
@@ -68,7 +68,7 @@ header ul{
 /* starting image/main tag styling*/
 
 main{
-	padding-top:50px;
+	padding-top:44px;
 }
 
 main img{
@@ -345,13 +345,89 @@ footer{
 }
 
 footer p:first-child{
-	margin-bottom:20PX;
+	margin-bottom:25PX;
+}
+
+footer p:first-child i{
+	font-size:20PX;
+	margin:-3px;
+	padding:0;
+}
+
+footer p:first-child i:hover{
+	opacity:0.7;
 }
 
 footer span{
 	text-decoration:underline;
 	text-transform:capitalize;
-	color:blue;
 }
 
 /* ending footer styling*/
+
+@media(max-width:767PX){
+
+	.mobile-hide{
+		display:none;
+	}
+
+	.mobile-display{
+		display:block;
+	}
+}
+
+/* starting large screen styling*/
+
+@media(min-width:768px){
+
+	.tablet-hide{
+		display:none;
+	}
+
+	.tablet-display{
+		display:block;
+	}
+
+	header ul{
+		display:block;
+		list-style:none;
+	}
+
+	header .ul1{
+		position:relative;
+	}
+
+	header .ul1 > li{
+		display:inline-block;
+	}
+
+	header .ul1 .search{
+		position:absolute;
+		right:0;
+	}
+
+	header .menu{
+		position:relative;
+	}
+	
+	header .menu .sub-ul{
+		position:absolute;
+		top:100%;
+		left:0%;
+		background-color:#fff;
+		color:black;
+		width:150PX;
+		display:none;
+	}
+
+	
+	header .ul1 .sub-ul li{
+		padding:10px 15PX;
+		text-transform:capitalize;
+		font-size:15PX;
+	}
+
+	header .menu:hover .sub-ul{
+		display:block;
+	}
+}

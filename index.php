@@ -4,25 +4,35 @@
 		<meta charset="utf-8">
 		<meta name="describe" content="trying band theme building of w3schools">
 		<title>band</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/all.min.css">
 	</head>
 	<body>
 		<header>
 			<div class="home">home</div>
 			<input type="checkbox" id="checking-box">
-			<label for="checking-box">
+			<label class="tablet-hide" for="checking-box">
 				<div class="icon-tool">
 					<div></div>
 					<div></div>
 					<div></div>
 				</div>
 			</label>
-			<div class="clear"></div>
-			<ul>
+			<div class="clear tablet-hide"></div>
+			<ul class="ul1">
 				<li>band</li>
 				<li>tour</li>
 				<li>contact</li>
-				<li>merch</li>
+				<li class="tablet-hide">merch</li>
+				<li class="menu mobile-hide">more<i class="fa fa-caret-down"></i>
+					<ul class="sub-ul">
+						<li>merchendise</li>
+						<li>extras</li>
+						<li>media</li>
+					</ul>
+				</li>
+				<li class="search mobile-hide"><i class="fa-solid fa-magnifying-glass"></i></li>
 			</ul>
 		</header>
 		<main>
@@ -128,7 +138,15 @@
 			</section>
 		</div>
 		<footer>
-			<p>icons</p>
+			<p>
+				<i class="fa-brands fa-square-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<!-- <i class="fa-brands fa-square-snapchat"></i> -->
+				<i class="fa-brands fa-snapchat"></i>
+				<i class="fa-brands fa-pinterest-p"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+			</p>
 			<p>Powered by <span>ayub</span></p>
 		</footer>
 	</body>
