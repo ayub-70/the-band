@@ -392,7 +392,7 @@ footer span{
 	/* starting header styling*/
 
 	header{
-		box-sizing:border-box;
+		position:relative;		
 	}
 
 	header .home, header .ul1{
@@ -408,26 +408,22 @@ footer span{
 	header ul{
 		display:block;
 		list-style:none;
-		/*display:inline-block;*/
-		/*border:solid 1px;*/
-		min-width:93%;
 	}
-
-	header .ul1{
-		position:relative;
-	}
-
+	
 	header .ul1 li{
 		display:inline-block;
 	}
 
-	header .ul1 .search{
+	header .search{
 		position:absolute;
 		right:0;
+		top:0;
+		padding:13px 20PX;
 	}
 
-	header .ul1 .search:hover{
+	header .search:hover{
 		background-color:#F44336;
+		cursor:pointer;
 	}
 
 	header .menu{
@@ -461,8 +457,8 @@ footer span{
 	/*starting main-image styling*/
 
 	main{
-		position:relative;
-		/*text-align:center;*/
+		position:relative;		
+		padding-top:0;
 	}
 
 	main div{
@@ -470,15 +466,12 @@ footer span{
 		bottom:55PX;
 		left:35%;
 		right:35%;
-		/*background-color:red;*/
 		color:#fff;	
 		text-align:center;	
 	}
 
 	main h2{
 		font-weight:400;
-		/*text-transform:capitalize;*/
-		/*border:solid 1px;*/
 		margin-bottom:20px;
 	}
 
@@ -490,5 +483,70 @@ footer span{
 		text-transform:capitalize;
 	}
 	/*ending main-image styling*/
+
+	/*starting bald section styling*/
+
+	.band{
+		width:60%;
+		margin:auto;
+		padding:80PX 0 100px 0;
+	}
+
+	.band p{
+		line-height:22PX;
+	}
+
+	.band p:first-letter{
+		text-transform:uppercase;
+	}
+
+	.band .bandmember{
+		padding:0;
+	}
+
+	.band .bandmember figure{
+		display:inline-block;		
+		width:160PX;
+		margin:0 50PX 0 50px;
+		border: solid 1px;
+	}
+
+	.band .bandmember figure figcaption{
+		margin:0 0 18px 0;
+	}
+
+	.band .bandmember figure img{
+		width:100%;
+	}
+
+	/*ending band section styling*/
+
+	/*starting tour dates section styling*/
+
+	.tour-dates{
+		border:solid 1px;
+	}
+
+	.tour-dates-content{
+		width:60%;
+		margin:auto;
+	}
+
+	.tour-dates-content .cities{
+		width:30%;
+		display:inline-block;
+		margin-left:20PX;
+	}
+
+	/*ending tour dates section styling*/
+
+	/*starting contact section styling*/
+
+	.contact{
+		width:60%;
+		margin:auto;
+	}
+
+	/*ending contact section styling*/	
 
 }
