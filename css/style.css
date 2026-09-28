@@ -486,6 +486,10 @@ footer span{
 
 	/*starting bald section styling*/
 
+	/**, *::before, *::after{
+	box-sizing:border-box;
+	}*/
+
 	.band{
 		width:60%;
 		margin:auto;
@@ -502,17 +506,28 @@ footer span{
 
 	.band .bandmember{
 		padding:0;
+		border:solid 1px;
+		width:100%;
+		/*box-sizing:border-box;*/
+		/*text-align:left;*/
+
 	}
 
 	.band .bandmember figure{
-		display:inline-block;		
+		/*display:inline-block;		*/
 		width:160PX;
 		margin:0 50PX 0 50px;
-		border: solid 1px;
+		margin:0 6.666%;
+		/*border: solid 1px red;*/
+		/*margin:0;*/
+		width:20%;
+		/*box-sizing:border-box;*/
+		float:left;
 	}
 
 	.band .bandmember figure figcaption{
 		margin:0 0 18px 0;
+		box-sizing:border-box;
 	}
 
 	.band .bandmember figure img{
@@ -547,6 +562,9 @@ footer span{
 		margin:auto;
 	}
 
-	/*ending contact section styling*/	
+	/*ending contact section styling*/
 
+	*{
+		box-sizing:border-box;
+	}
 }
