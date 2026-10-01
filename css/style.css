@@ -193,40 +193,40 @@ main img{
 	right:30PX;
 }
 
-.tour-dates .cities img{
+.tour-dates img{
 	width:100%;
 }
 
-.tour-dates .cities img:hover{
+.tour-dates .cities-f img:hover{
 	filter: brightness(50%);
 }
 
-.tour-dates .cities figure .content{
+.tour-dates figure .content{
 	padding:8PX 15PX 15PX 15PX;
 }
 
-.tour-dates .cities figure .content h4{
+.tour-dates figure .content h4{
 	text-transform:capitalize;
 	color:black;
 }
 
-.tour-dates .cities figure .content h4 + p{
+.tour-dates figure .content h4 + p{
 	color:grey;
 	text-transform:capitalize;
 	opacity:0.7;
 	margin-top:16PX;
 }
 
-.tour-dates .cities figure .content h4 + p +p{
+.tour-dates figure .content h4 + p +p{
 	color:black;
 	margin-top:16PX;
 }
 
-.tour-dates .cities figure .content h4 + p + p:first-letter{
+.tour-dates figure .content h4 + p + p:first-letter{
 	text-transform:uppercase;
 }
 
-.tour-dates .cities figure .content button{
+.tour-dates figure .content button{
 	margin-top:13PX;
 	padding:7PX 15PX;
 	background-color:black;
@@ -236,7 +236,7 @@ main img{
 	border:none;
 }
 
-.tour-dates .cities figure .content button:hover{
+.tour-dates figure .content button:hover{
 	background-color:#ccc;
 	color:black;
 	cursor:pointer;
@@ -486,10 +486,6 @@ footer span{
 
 	/*starting bald section styling*/
 
-	/**, *::before, *::after{
-	box-sizing:border-box;
-	}*/
-
 	.band{
 		width:60%;
 		margin:auto;
@@ -506,28 +502,17 @@ footer span{
 
 	.band .bandmember{
 		padding:0;
-		border:solid 1px;
 		width:100%;
-		/*box-sizing:border-box;*/
-		/*text-align:left;*/
-
 	}
 
 	.band .bandmember figure{
-		/*display:inline-block;		*/
-		width:160PX;
-		margin:0 50PX 0 50px;
-		margin:0 6.666%;
-		/*border: solid 1px red;*/
-		/*margin:0;*/
 		width:20%;
-		/*box-sizing:border-box;*/
+		margin:0 6.666%;
 		float:left;
 	}
 
 	.band .bandmember figure figcaption{
 		margin:0 0 18px 0;
-		box-sizing:border-box;
 	}
 
 	.band .bandmember figure img{
@@ -539,32 +524,90 @@ footer span{
 	/*starting tour dates section styling*/
 
 	.tour-dates{
-		border:solid 1px;
+		padding:110PX 0;
 	}
 
 	.tour-dates-content{
 		width:60%;
 		margin:auto;
+		text-align:center;
 	}
 
-	.tour-dates-content .cities{
-		width:30%;
-		display:inline-block;
-		margin-left:20PX;
+	.tour-dates-content > figure{
+		text-align:left;
 	}
 
+	.cities-f{
+		width:94%;
+		margin:auto;
+		text-align:left;
+		position:relative;
+	}
+
+	.tour-dates-content .cities-f figure{
+		margin:0;
+		width:32%;
+		float:left;
+	}
+
+	.tour-dates-content .cities-f figure + figure{
+		margin:0 auto;
+		margin-left:2%;
+	}
+
+	.tour-dates-content .cities-f figure:last-child{
+		position:absolute;
+		right:0;
+	}
+
+	.tour-dates-content .cities-f figure img{
+		width:100%;
+
+	}
 	/*ending tour dates section styling*/
 
 	/*starting contact section styling*/
 
 	.contact{
 		width:60%;
+		margin:100px auto 120PX ;
+		padding:0 0;
+	}
+
+	.contact p:first-child{
+		margin-bottom:25PX;
+	}
+
+	.contact figure{
+		padding:0 !important;
+		margin:20PX;
+	}
+
+	.contact ul, .contact form{
+		margin:0;
+		padding:0;
+	}
+
+	.contact figure ul, .contact figure form{
+		width:50%;
+		float:left;
+	}
+
+	.contact figure ul{
+		font-weight:500;
+	}
+
+	.contact figure form div:first-child{
+		width:49%;
+		float:left;
 		margin:auto;
 	}
 
-	/*ending contact section styling*/
-
-	*{
-		box-sizing:border-box;
+	.contact figure form div:first-child + div{
+		width:49%;
+		float:left;
+		margin-left:2%;
 	}
+
+	/*ending contact section styling*/
 }
