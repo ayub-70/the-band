@@ -376,9 +376,263 @@ footer span{
 	}
 }
 
-/* starting large screen styling*/
+/* starting middle screen styling*/
 
-@media(min-width:768px){
+@media(min-width:768px) and (max-width:1023px){
+
+	.middle-hide{
+		display:none !important;
+	}
+
+	.middle-appear{
+		display:block;
+	}
+
+	/*starting header styling*/
+
+	header{
+		position:fixed;
+	}
+
+	header .home, header .ul1{
+		display:inline-block;
+	}
+
+	header .home:hover{
+		background-color:#ccc !important;
+		color:black;
+		cursor:pointer;
+	}
+	
+	header .ul1 li{
+		display:inline-block;
+	}
+
+	header .search{
+		position:absolute;
+		right:0;
+		top:0;
+		padding:13px 20PX;
+	}
+
+	header .search:hover{
+		background-color:#F44336;
+		cursor:pointer;
+	}
+
+	header .menu{
+		position:relative;
+	}
+	
+	header .menu .sub-ul{
+		position:absolute;
+		top:100%;
+		left:0%;
+		background-color:#fff;
+		color:black;
+		width:150PX;
+		display:none;
+	}
+
+	
+	header .ul1 .sub-ul li{
+		padding:10px 15PX;
+		text-transform:capitalize;
+		font-size:15PX;
+		display:block;
+	}
+
+	header .menu:hover .sub-ul{
+		display:block;
+	}
+
+	/*ending header styling*/
+
+	
+	/*starting main image styling*/
+
+	main{
+		position:relative;		
+		padding-top:0;
+		width:100%;
+	}
+
+	main img{
+		width:100%;
+		height:auto;
+		display:block;
+	}
+
+	main div{
+		position:absolute;
+		left:25%;
+		bottom:14%;
+		color:#fff;	
+		text-align:center;
+		width:50%;
+		box-sizing:border-box;
+	}
+
+	main h2{
+		font-weight:400;
+		margin-bottom:20px;
+	}
+
+	main p{
+		font-weight:700;
+	}
+
+	main span, main h2{
+		text-transform:capitalize;
+	}
+	/*ending main-image styling*/
+
+	/*starting main-image styling*/
+
+	main{
+		position:relative;		
+		padding-top:0;
+		width:100%;
+	}
+
+	main img{
+		width:100%;
+		height:auto;
+		display:block;
+	}
+
+	main div{
+		position:absolute;
+		left:25%;
+		bottom:14%;
+		color:#fff;	
+		text-align:center;
+		width:50%;
+		box-sizing:border-box;
+	}
+
+	main h2{
+		font-weight:400;
+		margin-bottom:20px;
+	}
+
+	main p{
+		font-weight:700;
+		/*border:solid 1px red;*/
+		/*width:50%;*/
+	}
+
+	main span, main h2{
+		text-transform:capitalize;
+	}
+
+	/*ending main-image styling*/
+
+	/*starting band section styling*/
+
+	.band .bandmember{
+		/*border:solid 1px red;*/
+		/*float:left;*/
+	}
+
+	.band .bandmember figure{
+		width:20%;
+		margin:0 6.666%;
+		float:left;
+	}
+
+	.band .bandmember figure figcaption{
+		margin:0 0 18px 0;
+	}
+
+	.band .bandmember figure img{
+		width:100%;
+	}
+
+	/*ending band section styling*/
+
+	/*starting tour dates section styling*/
+
+	.cities-f{
+		width:94%;
+		margin:auto;
+		text-align:left;
+		position:relative;
+	}
+
+	.tour-dates-content .cities-f figure{
+		margin:0;
+		width:32%;
+		float:left;
+	}
+
+	.tour-dates-content .cities-f figure + figure{
+		margin:0 auto;
+		margin-left:2%;
+	}
+
+	.tour-dates-content .cities-f figure:last-child{
+		position:absolute;
+		right:0;
+	}
+
+	.tour-dates-content .cities-f figure img{
+		width:100%;
+
+	}
+
+	/*ending tour dates section styling*/
+
+	/*starting contact section styling*/
+
+	.contact figure{
+		padding:0 !important;
+		margin:20PX;
+	}
+
+	.contact ul, .contact form{
+		margin:0;
+		padding:0;
+	}
+
+	.contact figure ul, .contact figure form{
+		width:50%;
+		float:left;
+	}
+
+	.contact figure ul{
+		font-weight:500;
+	}
+
+	.contact figure form div:first-child{
+		width:49%;
+		float:left;
+		margin:auto;
+	}
+
+	.contact figure form div:first-child + div{
+		width:49%;
+		float:left;
+		margin-left:2%;
+	}
+
+	/*ending contact section styling*/
+
+	/*starting contact section styling*/
+
+	.location{
+		margin-top:100PX;
+	}
+
+	/*ending location section styling*/
+}
+
+/* ending middle screen styling*/
+
+/* starting large screens styling*/
+
+
+@media(min-width:1024px){
 
 	/*classes*/
 	.tablet-hide{
@@ -392,7 +646,8 @@ footer span{
 	/* starting header styling*/
 
 	header{
-		position:relative;		
+		position:relative;
+		position:fixed;	
 	}
 
 	header .home, header .ul1{
@@ -454,20 +709,64 @@ footer span{
 
 	/*ending header styling*/
 
+	main{
+		position:relative;		
+		padding-top:0;
+		width:100%;
+	}
+
+	main img{
+		width:100%;
+		height:auto;
+		display:block;
+	}
+
+	main div{
+		position:absolute;
+		left:25%;
+		bottom:14%;
+		color:#fff;	
+		text-align:center;
+		width:50%;
+		box-sizing:border-box;
+	}
+
+	main h2{
+		font-weight:400;
+		margin-bottom:20px;
+	}
+
+	main p{
+		font-weight:700;
+	}
+
+	main span, main h2{
+		text-transform:capitalize;
+	}
+	/*ending main-image styling*/
+
 	/*starting main-image styling*/
 
 	main{
 		position:relative;		
 		padding-top:0;
+		width:100%;
+	}
+
+	main img{
+		width:100%;
+		height:auto;
+		display:block;
 	}
 
 	main div{
 		position:absolute;
-		bottom:55PX;
-		left:35%;
-		right:35%;
+		left:25%;
+		bottom:14%;
 		color:#fff;	
-		text-align:center;	
+		text-align:center;
+		width:50%;
+		box-sizing:border-box;
 	}
 
 	main h2{
@@ -488,6 +787,7 @@ footer span{
 
 	.band{
 		width:60%;
+		width:940PX;
 		margin:auto;
 		padding:80PX 0 100px 0;
 	}
@@ -529,16 +829,20 @@ footer span{
 
 	.tour-dates-content{
 		width:60%;
+		width:100%;
+		max-width:1100PX;
 		margin:auto;
 		text-align:center;
 	}
 
 	.tour-dates-content > figure{
 		text-align:left;
+		width:940PX;
 	}
 
 	.cities-f{
 		width:94%;
+		width:940PX;
 		margin:auto;
 		text-align:left;
 		position:relative;
@@ -568,8 +872,8 @@ footer span{
 
 	/*starting contact section styling*/
 
-	.contact{
-		width:60%;
+	.contact{		
+		width:940PX;
 		margin:100px auto 120PX ;
 		padding:0 0;
 	}
@@ -611,3 +915,5 @@ footer span{
 
 	/*ending contact section styling*/
 }
+
+/*ending large screens styling*/
